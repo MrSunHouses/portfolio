@@ -1,18 +1,24 @@
 :root{
     --navHeight: 50px;
+    --darkColor:#7CA256;
+    --lightColor:#cfdb90;
 }
 
 body{
     margin: 0px;
-    background-color: #cfdb90;
+    background-color: var(--lightColor);
+    min-height: 100%;
+}
+
+#profile{
+    display:flex;
+
 }
 
 main{
     position: relative;
-    top: var(--navHeight);
-    display: flex;
-    align-content: center;
-    
+    padding-top: var(--navHeight);   
+    margin:0px 10px; 
 }
 
 main>img{
@@ -25,15 +31,20 @@ main>div{
 }
 
 nav {
+    z-index: 1;
     font-style: bold;
     font-size: 15pt;
     height: var(--navHeight);
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
     position:fixed;
-    background-color: #7CA256;
+    background-color: var(--darkColor);
     text-align: center;
-    margin-bottom: 10px;
     align-items: center;
+}
+
+#education div{
+    display: grid;
+    grid-template-columns: 4fr 1fr 3fr;
 }
