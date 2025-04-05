@@ -4,8 +4,12 @@
     --lightColor:#cfdb90;
 }
 
+html{
+    background-image: url("../images/bosque.jpg"); 
+    attribution: "credit to Juan Pérez for the image on https://commons.wikimedia.org/wiki/File:Bosque_de_Muniellos_02.jpg. No time to figure out how to add text to the background right now, so giving credit in the css since it can be accesed. Sorry for that Juan, I'll do my best when I have no deadlines to meet in a few minutes.";
+}
 body{
-    margin: 0px;
+    margin: 0px 50px;
     background-color: var(--lightColor);
 }
 
@@ -57,6 +61,5 @@ nav {
 }
 
 footer{
-    position: absolute;
-    position-anchor: bottom;
+    background-color: var(--lightColor);
 }
