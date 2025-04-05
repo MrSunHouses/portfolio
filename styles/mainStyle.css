@@ -1,3 +1,39 @@
-header{
+:root{
+    --navHeight: 50px;
+}
+
+body{
+    margin: 0px;
+    background-color: #cfdb90;
+}
+
+main{
+    position: relative;
+    top: var(--navHeight);
     display: flex;
+    align-content: center;
+    
+}
+
+main>img{
+    height:200px;
+    margin: 10px;
+}
+
+main>div{
+    width: 100%;
+}
+
+nav {
+    font-style: bold;
+    font-size: 15pt;
+    height: var(--navHeight);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position:fixed;
+    background-color: #7CA256;
+    text-align: center;
+    margin-bottom: 10px;
+    align-items: center;
 }
