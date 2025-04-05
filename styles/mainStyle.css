@@ -7,7 +7,6 @@
 body{
     margin: 0px;
     background-color: var(--lightColor);
-    min-height: 100%;
 }
 
 #profile{
